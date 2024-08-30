@@ -553,6 +553,10 @@ type Post struct {
 	IsSelfPost bool `json:"is_self"`
 	Saved      bool `json:"saved"`
 	Stickied   bool `json:"stickied"`
+
+	Approved   *bool      `json:"approved,omitempty"`
+	ApprovedAt *Timestamp `json:"approved_at_utc,omitempty"`
+	ApprovedBy string     `json:"approved_by,omitempty"`
 }
 
 // Subreddit holds information about a subreddit
