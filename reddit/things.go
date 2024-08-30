@@ -557,6 +557,8 @@ type Post struct {
 	Approved   *bool      `json:"approved,omitempty"`
 	ApprovedAt *Timestamp `json:"approved_at_utc,omitempty"`
 	ApprovedBy string     `json:"approved_by,omitempty"`
+
+	FlairText string `json:"link_flair_text,omitempty"`
 }
 
 // Subreddit holds information about a subreddit
